@@ -48,7 +48,7 @@ public class Registation extends AppCompatActivity {
 
         auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(Registation.this, task -> {
             if (task.isSuccessful()){
-            Toast.makeText(Registation.this,"Registration Successfully ",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Registation.this,"Congratulation Registration Successfully ",Toast.LENGTH_SHORT).show();
         }else {
             Toast.makeText(Registation.this, "Something wrong...Try Again!!", Toast.LENGTH_SHORT).show();
         }
